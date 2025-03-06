@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                // Genera código compatible con ECMAScript 6
+    "module": "CommonJS",            // Usa el sistema de módulos de Node.js
+    "outDir": "./dist",              // Carpeta donde se guardará el código compilado
+    "rootDir": "./src",              // Indica que el código fuente está en la carpeta "src"
+    "strict": true,                  // Activa reglas estrictas de TypeScript
+    "esModuleInterop": true,         // Permite importar módulos CommonJS como "express"
+    "forceConsistentCasingInFileNames": true, // Evita problemas con mayúsculas/minúsculas en imports
+    "skipLibCheck": true             // Evita revisar archivos de tipado en "node_modules"
+  },
+  "include": ["src"],                // Solo compila archivos dentro de "src"
+  "exclude": ["node_modules", "dist"] // No compila archivos en "node_modules" ni "dist"
+}
